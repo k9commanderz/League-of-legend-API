@@ -13,6 +13,6 @@ class Summoner(RP):
         pass
 
 
-test = Summoner("thechild", "RGAPI-82368e58-5faa-4ba3-b86c-774dea99a8f6")
+test = Summoner("thechild", "")
 print(test.url)
 print(test.get_json())
