@@ -124,25 +124,37 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state width="2539" height="416" key="GridCell.Tab.0.bottom" timestamp="1580004919571">
+    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580005112783">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="416" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580004919571" />
-    <state width="2539" height="416" key="GridCell.Tab.0.center" timestamp="1580004919571">
+    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580005112783" />
+    <state width="2539" height="416" key="GridCell.Tab.0.bottom" timestamp="1580005009506">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="416" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580004919571" />
-    <state width="2539" height="416" key="GridCell.Tab.0.left" timestamp="1580004919571">
+    <state width="2539" height="416" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580005009506" />
+    <state width="2539" height="416" key="GridCell.Tab.0.center" timestamp="1580005009506">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="416" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580004919571" />
-    <state width="2539" height="416" key="GridCell.Tab.0.right" timestamp="1580004919571">
+    <state width="2539" height="416" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580005009506" />
+    <state width="2539" height="416" key="GridCell.Tab.0.left" timestamp="1580005009506">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="416" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580004919571" />
+    <state width="2539" height="416" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580005009506" />
+    <state width="2539" height="416" key="GridCell.Tab.0.right" timestamp="1580005009506">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="416" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580005009506" />
+    <state x="992" y="417" key="MultipleFileMergeDialog" timestamp="1580005003694">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="992" y="417" key="MultipleFileMergeDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580005003694" />
     <state x="895" y="462" key="SettingsEditor" timestamp="1579984201692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580004983797">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580004983797" />
   </component>
 </project>

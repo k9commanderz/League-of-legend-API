@@ -60,6 +60,6 @@ class Summoner(RP):
 
 chosen_server = servers['EUW']
 test = Summoner()
-
+"TEST"
 print(test.get_account_profile("k9 commanderz", chosen_server))
 print(test.get_SR_ranked(test.summoner_id))
