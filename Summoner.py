@@ -1,6 +1,8 @@
 from RiotAPI import Riot_api as RP
 from RiotAPI import services
 from RiotAPI import servers
+from Champions import Champion
+import time
 
 
 class Summoner(RP):
@@ -11,7 +13,6 @@ class Summoner(RP):
         self.user = user
         self.account_status = self._account_status()
         *_, self.account_id, self.summoner_id = self.get_account_profile()
-
 
     def _account_status(self):
 
@@ -37,7 +38,7 @@ class Summoner(RP):
             return account_profile, account_data['accountId'], account_data['id']
 
         else:
-            return "Summoner not found","Account id not found", "Summoner id not found"
+            return "Summoner not found", "Account id not found", "Summoner id not found"
 
     def summoners_mastery(self):
         """
@@ -47,12 +48,17 @@ class Summoner(RP):
         if self.account_status:
             summoner_mastery = self._request(services['summoner_mastery'], self.summoner_id, self.server)
 
-            for champions in summoner_mastery:
-                print(champions)
-                if champions['championLevel'] > 5:
-                    pass
+            total_champion = len(summoner_mastery)  # total champions the user has played or at least got a point
 
+            mastery_champions = [(Champion(champions['championId']).get_champion_name(), champions['championLevel'], champions['championPoints'],
+                                  champions['lastPlayTime']) for champions in summoner_mastery[0:3] #only need top 3 champions no more
+                                 if champions[
+                                     'championLevel'] >= 4] # returns all champions that have mastery level of 5 and above anything below is not needed
 
+            """
+            need to work on getting the champions
+            """
+            return total_champion, mastery_champions
 
     def get_SR_Solo_ranked(self):
 
@@ -75,7 +81,5 @@ class Summoner(RP):
                 return rank, rank_promotion, win_percentage
 
 
-
-account = Summoner("k9commanderz")
-
-print(account.summoners_mastery())
+account = Summoner("gafarbey")
+print(account.summoner_id)
