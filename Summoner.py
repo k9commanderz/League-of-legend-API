@@ -4,62 +4,78 @@ from RiotAPI import servers
 
 
 class Summoner(RP):
-    api_key = "#"
 
-    def __init__(self):
-        super().__init__(self.api_key)
-        self.server = None
-        self.summoner_id = None
-        self.user = None
-        self.account_status = None
+    def __init__(self, user, server=servers['EUW']):
+        super().__init__()
+        self.server = server
+        self.user = user
+        self.account_status = self._account_status()
+        *_, self.account_id, self.summoner_id = self.get_account_profile()
 
-    def get_account_profile(self, username, server=servers['EUW']):
+
+    def _account_status(self):
+
+        """checks if the user account exist on a specific server"""
+
+        account_status = self._request(services['summoner'], self.user, self.server)
+        try:
+            if account_status['status']['status_code'] == 404:
+                print("Summoner not found")
+                return False
+        except KeyError:
+            return True
+
+    def get_account_profile(self):
         """Building up user profile which includes their account profile as well actual game profile"""
 
-        self.user = username.capitalize()
-        self.server = server
+        if self.account_status:
+            account_data = self._request(services['summoner'], self.user, self.server)
+            account_profile = account_data['name'], account_data['profileIconId'], \
+                              account_data[
+                                  'summonerLevel']
 
-        account_data = self._request(services['summoner'], self.user, self.server)
-
-        try:
-            self.account_status = account_data['status']['message']  #receive account status only if an account does not exist
-        except KeyError:
-            self.account_status = "Available"
-
-        if "summoner not found" in self.account_status:
-            return account_data['status']['message']
-        else:
-            account_name = account_data['name']
-            account_id = account_data['accountId']
-            profile_icon = account_data['profileIconId']
-            summoner_level = account_data['summonerLevel']
-            self.summoner_id = account_data['id']
-
-            return account_name, profile_icon, summoner_level, account_id, self.summoner_id
-
-    def get_SR_ranked(self, summoner_id):
-        request_summoner_data = self._request(services["summoner_status"], self.summoner_id, self.server)
-
-        if len(request_summoner_data) == 0:
-            return "Unranked Summoner rift"
-
-        elif "summoner not found" in self.account_status:
-            return "Data not found - summoner not found"
+            return account_profile, account_data['accountId'], account_data['id']
 
         else:
-            summoner_data = request_summoner_data[0]
-            rank = summoner_data['queueType'], summoner_data['tier'], summoner_data['rank']
-            rank_status = summoner_data['wins'], summoner_data['losses'], summoner_data['hotStreak']
-            rank_promotion = f"Ranked league Point: {summoner_data['leaguePoints']}" if "miniSeries" not in summoner_data else \
-                summoner_data['miniSeries']
+            return "Summoner not found","Account id not found", "Summoner id not found"
 
-            print(rank)
-            print(rank_status)
-            print(rank_promotion)
+    def summoners_mastery(self):
+        """
+        receive mastery of different champions a summoner has IE if the person has a level 7 Kassasin mastery
+        """
+
+        if self.account_status:
+            summoner_mastery = self._request(services['summoner_mastery'], self.summoner_id, self.server)
+
+            for champions in summoner_mastery:
+                print(champions['championLevel'])
+                if champions['championLevel'] > 5:
+                    pass
 
 
-chosen_server = servers['EUW']
-test = Summoner()
-"TEST"
-print(test.get_account_profile("k9 commanderz", chosen_server))
-print(test.get_SR_ranked(test.summoner_id))
+
+    def get_SR_Solo_ranked(self):
+
+        """returns stats for a 5 x 5 summer rift status for solo and duo """
+        if self.account_status:
+
+            request_summoner_data = self._request(services["summoner_status"], self.summoner_id, self.server)
+
+            if not request_summoner_data:
+                print("Unranked Summoner rift")
+
+            else:
+                summoner_data = request_summoner_data[0]
+                win_percentage = round(summoner_data['wins'] / (summoner_data['wins'] + summoner_data['losses']) * 100), \
+                                 summoner_data['wins'] + summoner_data['losses']
+                rank = summoner_data['queueType'], summoner_data['tier'], summoner_data['rank'], summoner_data['wins'], \
+                       summoner_data['losses']
+                rank_promotion = f"Ranked league Point: {summoner_data['leaguePoints']}" if "miniSeries" not in summoner_data else \
+                    summoner_data['miniSeries']
+                return rank, rank_promotion, win_percentage
+
+
+
+account = Summoner("k9commanderz")
+
+print(account.summoners_mastery())
