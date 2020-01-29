@@ -48,7 +48,7 @@ class Summoner(RP):
             summoner_mastery = self._request(services['summoner_mastery'], self.summoner_id, self.server)
 
             for champions in summoner_mastery:
-                print(champions['championLevel'])
+                print(champions)
                 if champions['championLevel'] > 5:
                     pass
 

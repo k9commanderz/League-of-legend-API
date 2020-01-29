@@ -1,7 +1,5 @@
 import requests
 
-"""""/lol/champion-mastery/v4/champion-masteries/by-summoner/{encryptedSummonerId}
-summoner/v4/summoners/by-name/k9commanderz  ?api_key=RGAPI-82368e58-5faa-4ba3-b86c-774dea99a8f6"""
 
 services = {"summoner": "/lol/summoner/v4/summoners/by-name/",
             "summoner_mastery": "/lol/champion-mastery/v4/champion-masteries/by-summoner/",
