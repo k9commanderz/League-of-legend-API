@@ -1,24 +1,26 @@
-from RiotAPI import Riot_api as RP
+from RiotAPI import api
 from RiotAPI import services
 from RiotAPI import servers
 from Champions import Champion
+from MatchHistory import Match_History
 import time
 
 
-class Summoner(RP):
+class Summoner(Match_History):
 
     def __init__(self, user, server=servers['EUW']):
-        super().__init__()
         self.server = server
         self.user = user
+        self.api = api
         self.account_status = self._account_status()
         *_, self.account_id, self.summoner_id = self.get_account_profile()
+        Match_History.__init__(self, self.account_id, server, services['match'])
 
     def _account_status(self):
 
         """checks if the user account exist on a specific server"""
 
-        account_status = self._request(services['summoner'], self.user, self.server)
+        account_status = self.api._request(services['summoner'], self.user, self.server)
         try:
             if account_status['status']['status_code'] == 404:
                 print("Summoner not found")
@@ -30,8 +32,8 @@ class Summoner(RP):
         """Building up user profile which includes their account profile as well actual game profile"""
 
         if self.account_status:
-            account_data = self._request(services['summoner'], self.user, self.server)
-            account_profile = account_data['name'], account_data['profileIconId'], \
+            account_data = self.api._request(services['summoner'], self.user, self.server)
+            account_profile = account_data['name'], f"{services['profile']}{account_data['profileIconId']}.png", \
                               account_data[
                                   'summonerLevel']
 
@@ -46,14 +48,16 @@ class Summoner(RP):
         """
 
         if self.account_status:
-            summoner_mastery = self._request(services['summoner_mastery'], self.summoner_id, self.server)
+            summoner_mastery = self.api._request(services['summoner_mastery'], self.summoner_id, self.server)
 
             total_champion = len(summoner_mastery)  # total champions the user has played or at least got a point
 
-            mastery_champions = [(Champion(champions['championId']).get_champion_name(), champions['championLevel'], champions['championPoints'],
-                                  champions['lastPlayTime']) for champions in summoner_mastery[0:3] #only need top 3 champions no more
+            mastery_champions = [(Champion(champions['championId']).get_champion_name(), champions['championLevel'],
+                                  champions['championPoints'],
+                                  champions['lastPlayTime']) for champions in summoner_mastery[0:3]
+                                 # only need top 3 champions no more
                                  if champions[
-                                     'championLevel'] >= 4] # returns all champions that have mastery level of 5 and above anything below is not needed
+                                     'championLevel'] >= 4]  # returns all champions that have mastery level of 5 and above anything below is not needed
 
             """
             need to work on getting the champions
@@ -65,7 +69,7 @@ class Summoner(RP):
         """returns stats for a 5 x 5 summer rift status for solo and duo """
         if self.account_status:
 
-            request_summoner_data = self._request(services["summoner_status"], self.summoner_id, self.server)
+            request_summoner_data = self.api._request(services["summoner_status"], self.summoner_id, self.server)
 
             if not request_summoner_data:
                 print("Unranked Summoner rift")
@@ -76,10 +80,9 @@ class Summoner(RP):
                                  summoner_data['wins'] + summoner_data['losses']
                 rank = summoner_data['queueType'], summoner_data['tier'], summoner_data['rank'], summoner_data['wins'], \
                        summoner_data['losses']
-                rank_promotion = f"Ranked league Point: {summoner_data['leaguePoints']}" if "miniSeries" not in summoner_data else \
+                rank_promotion = f"{summoner_data['leaguePoints']}" if "miniSeries" not in summoner_data else \
                     summoner_data['miniSeries']
                 return rank, rank_promotion, win_percentage
 
-
-account = Summoner("gafarbey")
-print(account.summoner_id)
+t = Summoner("k9commanderz")
+print(t.getMatchHistoryRift())

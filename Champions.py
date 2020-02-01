@@ -24,3 +24,4 @@ class Champion:
 
     def get_champion_skin(self):
         pass
+

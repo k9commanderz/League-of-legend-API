@@ -1,9 +1,11 @@
 import requests
 
-
 services = {"summoner": "/lol/summoner/v4/summoners/by-name/",
             "summoner_mastery": "/lol/champion-mastery/v4/champion-masteries/by-summoner/",
-            "summoner_status": "/lol/league/v4/entries/by-summoner/"
+            "summoner_status": "/lol/league/v4/entries/by-summoner/",
+            "spectator": "/lol/spectator/v4/active-games/by-summoner/",
+            "match": "/lol/match/v4/matchlists/by-account/",
+            "profile": "http://ddragon.leagueoflegends.com/cdn/10.2.1/img/profileicon/",
             }
 
 servers = {"BR": "br1.api.riotgames.com",
@@ -48,12 +50,21 @@ class Riot_api:
         except KeyError:  # if we don't receive a 401 or 403 status code we will assume API key is active
             print("API Key Active")
 
-    def o_request(self):
-        pass
+    def o_request(self, service, user_id, server=servers['EUW'], *args):
+        self.url = "https://{league_server}{api_service}{league_user}/?{args}&api_key={Api_key}".format(
+            league_server=self.server,
+            api_service=service,
+            league_user=user_id,
+            args="&".join(args),
+            Api_key=self.api_key,
+
+        )
+        return requests.get(self.url).json()
 
     def __str__(self):
         return "Makes request based on the difference services provided by riot games"
 
+api = Riot_api()
 
 if __name__ == "__main__":
     Riot_api()
