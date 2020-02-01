@@ -26,7 +26,7 @@ test_url = f"https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/k9
 class Riot_api:
 
     def __init__(self):
-        self.api_key = ""
+        self.api_key = "RGAPI-f5a18bb0-45c5-4929-9e51-c5a2e292d8eb"
         self.url = None
         self.test_url = test_url + self.api_key
         self.api_key_status(self.test_url)
