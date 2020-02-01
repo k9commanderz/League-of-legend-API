@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="added account profile&#10;as well as summoners rank">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Abdul.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spectator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Champions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Champions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatchHistory.py" beforeDir="false" afterPath="$PROJECT_DIR$/MatchHistory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/RiotAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Summoner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Summoner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/champion/Kayle.png" beforeDir="false" afterPath="$PROJECT_DIR$/champion/Kayle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/champion/Mordekaiser.png" beforeDir="false" afterPath="$PROJECT_DIR$/champion/Mordekaiser.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/champion/Morgana.png" beforeDir="false" afterPath="$PROJECT_DIR$/champion/Morgana.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/champion/Pantheon.png" beforeDir="false" afterPath="$PROJECT_DIR$/champion/Pantheon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileicon/3905.png" beforeDir="false" afterPath="$PROJECT_DIR$/profileicon/3905.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileicon/848.png" beforeDir="false" afterPath="$PROJECT_DIR$/profileicon/848.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileicon/850.png" beforeDir="false" afterPath="$PROJECT_DIR$/profileicon/850.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileicon/852.png" beforeDir="false" afterPath="$PROJECT_DIR$/profileicon/852.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileicon/854.png" beforeDir="false" afterPath="$PROJECT_DIR$/profileicon/854.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileicon/855.png" beforeDir="false" afterPath="$PROJECT_DIR$/profileicon/855.png" afterDir="false" />
-    </list>
+    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +29,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Summoner">
+  <component name="RunManager" selected="Python.League of legend Discord bot">
     <configuration name="Champions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Summoner" />
         <item itemvalue="Python.League of legend Discord bot" />
+        <item itemvalue="Python.Summoner" />
         <item itemvalue="Python.bot" />
         <item itemvalue="Python.MatchHistory" />
         <item itemvalue="Python.Champions" />
@@ -222,42 +203,58 @@
       <option name="project" value="LOCAL" />
       <updated>1580341426931</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="removed api inheritence to summoner profile">
+      <created>1580582846447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580582846447</updated>
+    </task>
+    <task id="LOCAL-00007" summary="removed the folders no longer need due to Data dragon providing all info via request">
+      <created>1580583052837</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580583052837</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added account profile&#10;as well as summoners rank" />
     <MESSAGE value="did stuff but i dont know what i did but i did do something" />
-    <option name="LAST_COMMIT_MESSAGE" value="did stuff but i dont know what i did but i did do something" />
+    <MESSAGE value="removed api inheritence to summoner profile" />
+    <MESSAGE value="removed the folders no longer need due to Data dragon providing all info via request" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the folders no longer need due to Data dragon providing all info via request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1579987599331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580582845538">
+    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580583131149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582845538" />
-    <state width="2498" height="115" key="GridCell.Tab.0.bottom" timestamp="1580582736922">
+    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131149" />
+    <state width="2498" height="115" key="GridCell.Tab.0.bottom" timestamp="1580583131991">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582736922" />
+    <state width="2498" height="115" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
     <state width="1419" height="166" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
-    <state width="2498" height="115" key="GridCell.Tab.0.center" timestamp="1580582736922">
+    <state width="2498" height="115" key="GridCell.Tab.0.center" timestamp="1580583131991">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582736922" />
+    <state width="2498" height="115" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
     <state width="1419" height="166" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
-    <state width="2498" height="115" key="GridCell.Tab.0.left" timestamp="1580582736922">
+    <state width="2498" height="115" key="GridCell.Tab.0.left" timestamp="1580583131991">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582736922" />
+    <state width="2498" height="115" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
     <state width="1419" height="166" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
-    <state width="2498" height="115" key="GridCell.Tab.0.right" timestamp="1580582736922">
+    <state width="2498" height="115" key="GridCell.Tab.0.right" timestamp="1580583131991">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582736922" />
+    <state width="2498" height="115" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
     <state width="1419" height="166" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -267,10 +264,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580582850738">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580583062724">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582850738" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583062724" />
     <state x="2560" y="0" width="1456" height="828" key="dock-window-1" timestamp="1580582441309">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>

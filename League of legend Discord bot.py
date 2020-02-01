@@ -62,4 +62,4 @@ class League_bot(commands.Cog):
 
 bot.add_cog(League_bot(bot))
 
-bot.run("NjcyMDgzNDcyODQzNjY5NTI3.XjRkfA.LQuWaEH4dmkIOw3GbWgHTdQ__x4")
+bot.run("")
