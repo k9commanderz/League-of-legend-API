@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="" />
+    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="removed the folders no longer need due to Data dragon providing all info via request">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/League of legend Discord bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchHistory.py" beforeDir="false" afterPath="$PROJECT_DIR$/MatchHistory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/RiotAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Summoner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Summoner.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,8 +145,8 @@
       <list>
         <item itemvalue="Python.League of legend Discord bot" />
         <item itemvalue="Python.Summoner" />
-        <item itemvalue="Python.bot" />
         <item itemvalue="Python.MatchHistory" />
+        <item itemvalue="Python.bot" />
         <item itemvalue="Python.Champions" />
       </list>
     </recent_temporary>
@@ -217,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580583052837</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="removed bot token">
+      <created>1580583171163</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580583171163</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,37 +238,38 @@
     <MESSAGE value="did stuff but i dont know what i did but i did do something" />
     <MESSAGE value="removed api inheritence to summoner profile" />
     <MESSAGE value="removed the folders no longer need due to Data dragon providing all info via request" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the folders no longer need due to Data dragon providing all info via request" />
+    <MESSAGE value="removed bot token" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed bot token" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1579987599331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580583131149">
+    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580591057486">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131149" />
-    <state width="2498" height="115" key="GridCell.Tab.0.bottom" timestamp="1580583131991">
+    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591057486" />
+    <state width="2539" height="152" key="GridCell.Tab.0.bottom" timestamp="1580591105327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
-    <state width="1419" height="166" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
-    <state width="2498" height="115" key="GridCell.Tab.0.center" timestamp="1580583131991">
+    <state width="2539" height="152" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591105327" />
+    <state width="1419" height="136" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580584199793" />
+    <state width="2539" height="152" key="GridCell.Tab.0.center" timestamp="1580591105327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
-    <state width="1419" height="166" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
-    <state width="2498" height="115" key="GridCell.Tab.0.left" timestamp="1580583131991">
+    <state width="2539" height="152" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591105327" />
+    <state width="1419" height="136" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580584199793" />
+    <state width="2539" height="152" key="GridCell.Tab.0.left" timestamp="1580591105326">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
-    <state width="1419" height="166" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
-    <state width="2498" height="115" key="GridCell.Tab.0.right" timestamp="1580583131991">
+    <state width="2539" height="152" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591105326" />
+    <state width="1419" height="136" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580584199793" />
+    <state width="2539" height="152" key="GridCell.Tab.0.right" timestamp="1580591105327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2498" height="115" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583131991" />
-    <state width="1419" height="166" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580327699806" />
+    <state width="2539" height="152" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591105327" />
+    <state width="1419" height="136" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580584199793" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -264,18 +278,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580583062724">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580583190950">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583062724" />
-    <state x="2560" y="0" width="1456" height="828" key="dock-window-1" timestamp="1580582441309">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580583190950" />
+    <state x="2649" y="-17" width="1456" height="945" maximized="true" key="dock-window-1" timestamp="1580589597566">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
-    <state x="2560" y="0" width="1456" height="828" key="dock-window-1/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580582441309" />
-    <state x="2552" y="-8" width="1456" height="916" key="dock-window-2" timestamp="1580402480472">
+    <state x="2649" y="-17" width="1456" height="945" maximized="true" key="dock-window-1/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580589597566" />
+    <state x="2560" y="0" width="1456" height="945" key="dock-window-2" timestamp="1580590707195">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
-    <state x="2552" y="-8" width="1456" height="916" key="dock-window-2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580402480472" />
+    <state x="2560" y="0" width="1456" height="945" key="dock-window-2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580590707195" />
     <state x="2560" y="0" width="1456" height="945" key="dock-window-3" timestamp="1580420560361">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
@@ -288,20 +302,9 @@
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
     <state x="2560" y="0" width="1456" height="826" key="dock-window-5/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580482872361" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1580426141890">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1580584355418">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580426141890" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MatchHistory.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580584355418" />
   </component>
 </project>
