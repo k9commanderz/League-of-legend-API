@@ -12,6 +12,6 @@ Champion Builds but would require permissionn from OP.GG or other site for those
 
 Summoner Profile working, need to tweak some features and remove some bugs
 
-[profile](https://i.imgur.com/NmTa2mt.png)
-[profile](https://i.imgur.com/KKTXCJP.png)
-[profile](https://i.imgur.com/16KubCb.png)
+![profile](https://i.imgur.com/NmTa2mt.png)
+![profile](https://i.imgur.com/KKTXCJP.png)
+![profile](https://i.imgur.com/16KubCb.png)
