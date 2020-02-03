@@ -26,17 +26,18 @@ test_url = f"https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/k9
 class Riot_api:
 
     def __init__(self):
-        self.api_key = "RGAPI-f5a18bb0-45c5-4929-9e51-c5a2e292d8eb"
+        self.api_key = ""
         self.url = None
         self.test_url = test_url + self.api_key
         self.api_key_status(self.test_url)
 
-    def _request(self, service, user_id, server=servers['EUW']):
+    def _request(self, service, user_id, server=servers['EUW'], *args):
         self.server = server
-        self.url = "https://{league_server}{api_service}{league_user}/?api_key={Api_key}".format(
+        self.url = "https://{league_server}{api_service}{league_user}/?{args}&api_key={Api_key}".format(
             league_server=self.server,
             api_service=service,
             league_user=user_id,
+            args = "&".join(args),
             Api_key=self.api_key,
 
         )
@@ -50,21 +51,10 @@ class Riot_api:
         except KeyError:  # if we don't receive a 401 or 403 status code we will assume API key is active
             print("API Key Active")
 
-    def o_request(self, service, user_id, server=servers['EUW'], *args):
-        self.url = "https://{league_server}{api_service}{league_user}/?{args}&api_key={Api_key}".format(
-            league_server=self.server,
-            api_service=service,
-            league_user=user_id,
-            args="&".join(args),
-            Api_key=self.api_key,
-
-        )
-        return requests.get(self.url).json()
-
     def __str__(self):
         return "Makes request based on the difference services provided by riot games"
 
-api = Riot_api()
+
 
 if __name__ == "__main__":
     Riot_api()

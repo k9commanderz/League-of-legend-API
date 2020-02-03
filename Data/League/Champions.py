@@ -8,7 +8,7 @@ class Champion:
         self.champion_name = self.get_champion_name()
 
     def get_champion_name(self):
-        data = json.load(open("champion.json", encoding="utf8"))
+        data = json.load(open("Data/Json files/champion.json", encoding="utf8"))
 
         for champ in data['data'].items():
             _, c_id, key, name, title, *_ = champ[1].values()
