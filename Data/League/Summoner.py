@@ -8,16 +8,21 @@ import time
 
 start = time.time()
 
-class Summoner(Match_History, Spectator, RP):
+
+class Summoner(RP, Match_History, Spectator):
 
     def __init__(self, user, server=servers['EUW']):
-        RP.__init__(self)
+        super().__init__()
         self.__server = server
         self.__user = user
         self.account_status = self._account_status()
-        *_, self.__account_id, self.__summoner_id = self.get_account_profile()
-        self.match = Match_History.__init__(self, self.__account_id, server, services['match'])
-        self.spectate = Spectator.__init__(self, self.__summoner_id, self.__server, services['spectator'])
+
+        if self.account_status == "Summoner not found":
+            pass
+        else:
+            *_, self.__account_id, self.__summoner_id = self.get_account_profile()
+            Match_History.__init__(self, self.__account_id, server, services['match'])
+            Spectator.__init__(self, self.__summoner_id, self.__server, services['spectator'])
 
     def _account_status(self):
 

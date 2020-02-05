@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="Added Threading for rec">
-      <change afterPath="$PROJECT_DIR$/Data/Discord_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json files/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/Map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/MatchHistory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/Summoner_spell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/spectator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/__init__.py" afterDir="false" />
+    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Data/random stuff.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Champions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Champions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/League/Summoner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Summoner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RiotAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/League of legend Discord bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatchHistory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RiotAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Summoner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Summoner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectator.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +50,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.League of legend Discord bot">
+    <configuration name="Hotukdealv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="League of legend API" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Hotukdealv2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="League of legend Discord bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RiotAPI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,32 +100,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Abdul\PycharmProjects\League of legend API\Data\League\Map.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MatchHistory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="League of legend API" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Abdul\PycharmProjects\League of legend API\Data\League\MatchHistory.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/RiotAPI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Summoner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SummonersEmbed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/Discord_data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Abdul\PycharmProjects\League of legend API\Data\League\Summoner.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/Discord_data/SummonersEmbed.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.League of legend Discord bot" />
+        <item itemvalue="Python.SummonersEmbed" />
+        <item itemvalue="Python.RiotAPI" />
+        <item itemvalue="Python.Hotukdealv2" />
         <item itemvalue="Python.Summoner (1)" />
-        <item itemvalue="Python.Summoner" />
-        <item itemvalue="Python.Map" />
-        <item itemvalue="Python.MatchHistory" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580591203449</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Moved Folders, added new features">
+      <created>1580746178913</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1580746178913</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -271,37 +268,38 @@
     <MESSAGE value="removed the folders no longer need due to Data dragon providing all info via request" />
     <MESSAGE value="removed bot token" />
     <MESSAGE value="Added Threading to receive total games played for rift and aram" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Threading to receive total games played for rift and aram" />
+    <MESSAGE value="Moved Folders, added new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved Folders, added new features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1579987599331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580591202854">
+    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580746178082">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591202854" />
-    <state width="2539" height="283" key="GridCell.Tab.0.bottom" timestamp="1580746120354">
+    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746178082" />
+    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1580936271512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="283" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746120354" />
-    <state width="1419" height="258" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580673572157" />
-    <state width="2539" height="283" key="GridCell.Tab.0.center" timestamp="1580746120354">
+    <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="1419" height="2" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
+    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1580936271512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="283" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746120354" />
-    <state width="1419" height="258" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580673572157" />
-    <state width="2539" height="283" key="GridCell.Tab.0.left" timestamp="1580746120354">
+    <state width="2539" height="235" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="1419" height="2" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
+    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1580936271512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="283" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746120354" />
-    <state width="1419" height="258" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580673572157" />
-    <state width="2539" height="283" key="GridCell.Tab.0.right" timestamp="1580746120354">
+    <state width="2539" height="235" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="1419" height="2" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
+    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1580936271512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="283" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746120354" />
-    <state width="1419" height="258" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580673572157" />
+    <state width="2539" height="235" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="1419" height="2" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -310,22 +308,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580591215991">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580746184324">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580591215991" />
-    <state x="2560" y="0" width="1456" height="945" key="dock-window-1" timestamp="1580734480554">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746184324" />
+    <state x="2560" y="0" width="1456" height="945" key="dock-window-1" timestamp="1580916121241">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
-    <state x="2560" y="0" width="1456" height="945" key="dock-window-1/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580734480554" />
+    <state x="2560" y="0" width="1456" height="945" key="dock-window-1/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580916121241" />
     <state x="2560" y="0" width="1456" height="945" key="dock-window-2" timestamp="1580743144806">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
     <state x="2560" y="0" width="1456" height="945" key="dock-window-2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580743144806" />
-    <state x="2560" y="0" width="1456" height="945" key="dock-window-3" timestamp="1580420560361">
+    <state x="2560" y="0" width="1456" height="945" key="dock-window-3" timestamp="1580752365647">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
-    <state x="2560" y="0" width="1456" height="945" key="dock-window-3/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580420560361" />
+    <state x="2560" y="0" width="1456" height="945" key="dock-window-3/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580752365647" />
     <state x="2554" y="8" width="1456" height="826" key="dock-window-4" timestamp="1580426017627">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>

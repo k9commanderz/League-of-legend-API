@@ -1,4 +1,5 @@
 import requests
+from ratelimit import limits, sleep_and_retry
 
 services = {"summoner": "/lol/summoner/v4/summoners/by-name/",
             "summoner_mastery": "/lol/champion-mastery/v4/champion-masteries/by-summoner/",
@@ -26,22 +27,27 @@ test_url = f"https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/k9
 class Riot_api:
 
     def __init__(self):
-        self.api_key = ""
-        self.url = None
-        self.test_url = test_url + self.api_key
+        self.__api_key = ""
+        self.__url = None
+        self.test_url = test_url + self.__api_key
         self.api_key_status(self.test_url)
 
+    @sleep_and_retry
+    @limits(calls=100, period=120)
+    @sleep_and_retry
+    @limits(calls=20, period=1)
     def _request(self, service, user_id, server=servers['EUW'], *args):
         self.server = server
-        self.url = "https://{league_server}{api_service}{league_user}/?{args}&api_key={Api_key}".format(
+        self.__url = "https://{league_server}{api_service}{league_user}/?{args}&api_key={Api_key}".format(
             league_server=self.server,
             api_service=service,
             league_user=user_id,
-            args = "&".join(args),
-            Api_key=self.api_key,
+            args="&".join(args),
+            Api_key=self.__api_key,
 
         )
-        return requests.get(self.url).json()
+
+        return requests.get(self.__url).json()
 
     def api_key_status(self, api):
         try:
@@ -53,7 +59,6 @@ class Riot_api:
 
     def __str__(self):
         return "Makes request based on the difference services provided by riot games"
-
 
 
 if __name__ == "__main__":
