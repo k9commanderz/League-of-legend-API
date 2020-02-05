@@ -263,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580936436114</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed Spectate info not displaying">
+      <created>1580937548917</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580937548917</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -275,17 +282,18 @@
     <MESSAGE value="Added Threading to receive total games played for rift and aram" />
     <MESSAGE value="Moved Folders, added new features" />
     <MESSAGE value="cleaned up summoner command moved it to another class for easier debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up summoner command moved it to another class for easier debugging" />
+    <MESSAGE value="Fixed Spectate info not displaying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Spectate info not displaying" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1579987599331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580936435392">
+    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580938492210">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936435392" />
+    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580938492210" />
     <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1580937327159">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -314,10 +322,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580936440222">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580937550185">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936440222" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937550185" />
     <state x="2560" y="0" width="1456" height="945" key="dock-window-1" timestamp="1580916121241">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
