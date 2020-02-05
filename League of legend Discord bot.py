@@ -56,7 +56,6 @@ class League_bot(commands.Cog):
         await ctx.channel.send(embed=embed)
 
 
-bot.add_cog(League_bot(bot))
-
 if __name__ == "__main__":
+    bot.add_cog(League_bot(bot))
     bot.run("")

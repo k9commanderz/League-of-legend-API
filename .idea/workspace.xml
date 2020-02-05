@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Data/random stuff.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/Summoner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Summoner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RiotAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/League of legend Discord bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
     </list>
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580746178913</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="cleaned up summoner command moved it to another class for easier debugging">
+      <created>1580936436114</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1580936436114</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -269,36 +274,37 @@
     <MESSAGE value="removed bot token" />
     <MESSAGE value="Added Threading to receive total games played for rift and aram" />
     <MESSAGE value="Moved Folders, added new features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved Folders, added new features" />
+    <MESSAGE value="cleaned up summoner command moved it to another class for easier debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up summoner command moved it to another class for easier debugging" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1579987599331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580746178082">
+    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580936435392">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746178082" />
-    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1580936271512">
+    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936435392" />
+    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1580937327159">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327159" />
     <state width="1419" height="2" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
-    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1580936271512">
+    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1580937327158">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="2539" height="235" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327158" />
     <state width="1419" height="2" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
-    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1580936271512">
+    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1580937327158">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="2539" height="235" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327158" />
     <state width="1419" height="2" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
-    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1580936271512">
+    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1580937327158">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936271512" />
+    <state width="2539" height="235" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327158" />
     <state width="1419" height="2" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -308,10 +314,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580746184324">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580936440222">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580746184324" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580936440222" />
     <state x="2560" y="0" width="1456" height="945" key="dock-window-1" timestamp="1580916121241">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>
