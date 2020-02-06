@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="">
+    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="Fixed Spectate info not displaying">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Json files/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Json files/champion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Json files/maps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Json files/queues.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Json files/summoner.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/League/Champions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Champions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/League/Map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Map.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RiotAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/League of legend Discord bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
     </list>
@@ -48,7 +55,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.League of legend Discord bot">
-    <configuration name="Hotukdealv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Json_downloader (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,11 +63,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/Json_files" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Hotukdealv2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/Json_files/Json_downloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Json_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="League of legend API" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/Json files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/Json files/Json_downloader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,27 +139,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Summoner (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="League of legend API" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/League" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/League/Summoner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="SummonersEmbed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.League of legend Discord bot" />
+        <item itemvalue="Python.Json_downloader (1)" />
+        <item itemvalue="Python.Json_downloader" />
         <item itemvalue="Python.SummonersEmbed" />
         <item itemvalue="Python.RiotAPI" />
-        <item itemvalue="Python.Hotukdealv2" />
-        <item itemvalue="Python.Summoner (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580937548917</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="forgot to upload remaining files">
+      <created>1580938492860</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1580938492860</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed Spectate info not displaying">
+      <created>1580938556250</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1580938556250</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -282,6 +303,7 @@
     <MESSAGE value="Added Threading to receive total games played for rift and aram" />
     <MESSAGE value="Moved Folders, added new features" />
     <MESSAGE value="cleaned up summoner command moved it to another class for easier debugging" />
+    <MESSAGE value="forgot to upload remaining files" />
     <MESSAGE value="Fixed Spectate info not displaying" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed Spectate info not displaying" />
   </component>
@@ -290,30 +312,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="1347" y="350" key="CommitChangelistDialog2" timestamp="1580938492210">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1580942038990">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1347" y="350" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580938492210" />
-    <state width="2539" height="235" key="GridCell.Tab.0.bottom" timestamp="1580937327159">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580942038990" />
+    <state width="2539" height="211" key="GridCell.Tab.0.bottom" timestamp="1580949655044">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327159" />
-    <state width="1419" height="2" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
-    <state width="2539" height="235" key="GridCell.Tab.0.center" timestamp="1580937327158">
+    <state width="2539" height="211" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580949655044" />
+    <state width="1419" height="68" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580947794778" />
+    <state width="2539" height="211" key="GridCell.Tab.0.center" timestamp="1580949655044">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327158" />
-    <state width="1419" height="2" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
-    <state width="2539" height="235" key="GridCell.Tab.0.left" timestamp="1580937327158">
+    <state width="2539" height="211" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580949655044" />
+    <state width="1419" height="68" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580947794778" />
+    <state width="2539" height="211" key="GridCell.Tab.0.left" timestamp="1580949655044">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327158" />
-    <state width="1419" height="2" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
-    <state width="2539" height="235" key="GridCell.Tab.0.right" timestamp="1580937327158">
+    <state width="2539" height="211" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580949655044" />
+    <state width="1419" height="68" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580947794778" />
+    <state width="2539" height="211" key="GridCell.Tab.0.right" timestamp="1580949655044">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="235" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937327158" />
-    <state width="1419" height="2" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580935528215" />
+    <state width="2539" height="211" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580949655044" />
+    <state width="1419" height="68" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1580947794778" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -322,10 +344,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579984201692" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580937550185">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1580938561567">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580937550185" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1580938561567" />
     <state x="2560" y="0" width="1456" height="945" key="dock-window-1" timestamp="1580916121241">
       <screen x="2560" y="0" width="1440" height="860" />
     </state>

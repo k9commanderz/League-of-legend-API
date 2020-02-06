@@ -14,11 +14,11 @@ modes = ["5v5 Draft Pick games",
 class Map:
 
     def __init__(self, map_id=0):
-        self.map_info = json.load(open("Data/Json files/queues.json"))
+        self.map_info = json.load(open("Data/Json_files/queues.json"))
         self.map_id = int(map_id)
 
     def get_map_name(self):
-        data = json.load(open("Data/Json files/maps.json", encoding="utf8"))
+        data = json.load(open("Data/Json_files/maps.json", encoding="utf8"))
 
         for map_detail in data:
             map_id, map_name, _ = map_detail.values()
