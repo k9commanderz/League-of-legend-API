@@ -8,6 +8,7 @@ Features to add:
 Champions, receive their ability, skin preview etc
 
 Champion Builds but would require permissionn from OP.GG or other site for those data etc
+or will proceed with creating script to gather matchistory and update an SQL databse with it
 
 
 Summoner Profile working, need to tweak some features and remove some bugs
