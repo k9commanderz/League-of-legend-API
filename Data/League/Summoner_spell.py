@@ -11,7 +11,7 @@ class Summoner_spell:
         """
         Retrieve the name of a summoner spell from given id
         """
-        data = json.load(open("Data/Json files/summoner.json", encoding="utf8"))
+        data = json.load(open("Data/Json_files/summoner.json", encoding="utf8"))
         for i in data['data'].values():
             if int(i['key']) == self.sum_id:
                 return i['name']

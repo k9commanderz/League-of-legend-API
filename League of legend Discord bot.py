@@ -1,11 +1,11 @@
 import discord
 from discord.ext import commands
 # from discord.ext.commands import CommandError
+from Data.Discord_data.Ability_Embed import Ability_embed
 from Data.Discord_data.SummonersEmbed import Summoner_embed, servers
 import time
 
 bot = commands.Bot(command_prefix='$')
-
 
 
 class League_bot(commands.Cog):
@@ -29,6 +29,7 @@ class League_bot(commands.Cog):
 
     @commands.command()
     async def summoner(self, ctx, server, *args):
+
         start = time.time()
         """
         $summoner <Server> <Username>
@@ -55,6 +56,12 @@ class League_bot(commands.Cog):
 
         await ctx.channel.send(embed=embed)
 
+    @commands.command()
+    async def ability(self, ctx, champion, ability):
+
+        embed = discord.Embed.from_dict(Ability_embed(champion, ability).embed)
+
+        await ctx.channel.send(embed=embed)
 
 if __name__ == "__main__":
     bot.add_cog(League_bot(bot))

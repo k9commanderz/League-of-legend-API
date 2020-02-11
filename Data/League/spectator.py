@@ -1,5 +1,5 @@
 import datetime
-from Data.League.Champions import Champion
+from Data.League import Champions
 from Data.League.Map import Map
 from Data.League.Summoner_spell import Summoner_spell
 
@@ -26,12 +26,11 @@ class Spectator:
             if participant['summonerId'] == self.summoner_id:
                 TeamID, f_summonerSpell, s_summonerSpell, champion_id, _, original_summoner, *_ = participant.values()
                 team = 'Blue' if TeamID == 100 else 'Red'
-                champion_name = Champion(champion_id).get_champion_name()
+                champion_name = Champions.get_champion_name(champion_id)
                 summoner_spell = Summoner_spell(f_summonerSpell).sum_name, Summoner_spell(s_summonerSpell).sum_name
                 game_length = str(datetime.timedelta(seconds=game_length))
                 game_mode, map_name = (
                     Map(game_mode).get_game_mode()) if 'gameQueueConfigId' in game else (
                     game_type, Map(map_id).get_map_name())
-
 
                 return team, map_name, game_mode, summoner_spell, champion_name, game_length

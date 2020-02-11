@@ -30,13 +30,12 @@ class Match_History(Map):
             aram_match = executor.map(self.matchHistoryARAM, self.__aram)
             Coop_riftMatch = executor.map(self.matchHistoryCo_op, self.__coop_rift)
 
-
     def matchHistoryRift(self, map_id):
         """"
              Get match history including the lanes as well as champions and teams involved 
         """""
         match_list = self._request(self.__service, self.__account_id, self.__server, f"queue={map_id}",
-                                        "beginIndex=100")
+                                   "beginIndex=100")
         if 'status' in match_list:  # would mean that no data is found for the map mode
             pass
         else:
@@ -50,7 +49,8 @@ class Match_History(Map):
         :return: 
         """""
         match_list = self._request(self.__service, self.__account_id, self.__server, f"queue={map_id}",
-                                        "beginIndex=100")
+                                   "beginIndex=100")
+
         if 'status' in match_list:  # would mean that no data is found for the map mode
             pass
         else:
@@ -64,7 +64,7 @@ class Match_History(Map):
         :return: 
         """""
         match_list = self._request(self.__service, self.__account_id, self.__server, f"queue={map_id}",
-                                        "beginIndex=100")
+                                   "beginIndex=100")
         if 'status' in match_list:  # would mean that no data is found for the map mode
             pass
         else:

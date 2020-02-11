@@ -24,8 +24,8 @@ class Summoner_embed(Summoner):
 
         self.embed = dict(
             title=f"{self.summoner_name.title()} |\\Level {self.summoner_level}/|",
-            colour=2470660,
-            footer=dict(text="header"),
+            color=2470660,
+            footer=dict(text="Place Holder"),
             thumbnail=dict(url=self.summoner_icon),
 
         )
@@ -35,6 +35,7 @@ class Summoner_embed(Summoner):
         self.__champion_points_embed()
         self.__rank_embed()
         self.__game_summary()
+
 
         return self.embed
 
@@ -127,18 +128,22 @@ class Summoner_embed(Summoner):
             rank_title = " ".join((rank_title.title(), rank_level))
             total_games = win + loss
 
-            if len(promotion) <= 2:
-                league_point = f"|:white_small_square:**League Point:** {promotion}"
-            elif int(promotion) > 100:
-                league_point = f"|:white_small_square:**League Point:** {promotion}"
+            if type(promotion) == dict:
+                print(promotion)
+                p_win, p_loss, target,p_games = promotion['wins'],promotion['losses'],promotion['target'],len(promotion['progress'])
+                league_point = f"|:white_small_square:**Promotion Series**\n" \
+                               f"|:small_blue_diamond: **Win: **{p_win}\n|:small_blue_diamond: **Loss:** {p_loss}\n|:small_blue_diamond: **Target:** {target}\n|:small_blue_diamond: **Games:** {p_games}"
             else:
-                league_point = f"|:white_small_square:**Promotion Series**\n{promotion['progress']} "
+                if len(promotion) <= 2:
+                    league_point = f"|:white_small_square:**League Point:** {promotion}"
+                elif int(promotion) > 100:
+                    league_point = f"|:white_small_square:**League Point:** {promotion}"
 
             rank = dict(name="**Ranked Summary**",
                         value=f"|:white_small_square:**{rank_title}**\n"
                               f"|:white_small_square:**Win** {win} \n"
                               f"|:white_small_square:**Lost** {loss}\n"
-                              f"|:white_small_square:**Win Percentage** {win_percent}\n"
+                              f"|:white_small_square:**Win Percentage** {win_percent}%\n"
                               f"{league_point}\n"
                               f"|:white_small_square:**Total Games** {total_games}",
                         inline=True)

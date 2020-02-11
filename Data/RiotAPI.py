@@ -1,4 +1,5 @@
 import requests
+from Data.Json_files import Json_downloader
 from ratelimit import limits, sleep_and_retry
 
 services = {"summoner": "/lol/summoner/v4/summoners/by-name/",
@@ -31,6 +32,7 @@ class Riot_api:
         self.__url = None
         self.test_url = test_url + self.__api_key
         self.api_key_status(self.test_url)
+        self.total_request = 0
 
     @sleep_and_retry
     @limits(calls=100, period=120)
@@ -46,7 +48,8 @@ class Riot_api:
             Api_key=self.__api_key,
 
         )
-
+        self.total_request += 1
+        print(self.total_request)
         return requests.get(self.__url).json()
 
     def api_key_status(self, api):
@@ -60,6 +63,6 @@ class Riot_api:
     def __str__(self):
         return "Makes request based on the difference services provided by riot games"
 
-
 if __name__ == "__main__":
+
     Riot_api()
