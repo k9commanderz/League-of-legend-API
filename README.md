@@ -16,3 +16,9 @@ Summoner Profile working, need to tweak some features and remove some bugs
 ![profile](https://i.imgur.com/NmTa2mt.png)
 ![profile](https://i.imgur.com/KKTXCJP.png)
 ![profile](https://i.imgur.com/16KubCb.png)
+
+Champion ability has been implemented
+
+![profile](https://i.imgur.com/E2hxgCb.gifv)
+![profile](https://i.imgur.com/Zmz0L7d.gifv)
+
