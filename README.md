@@ -14,6 +14,14 @@ Summoner’s Match History
 *	Summoner’s best lane/champions 
 *	Summoner’s game status full
 
+API Wrapper
+*	Download latest Json for champions (script for downloading json is near completion)
+*	Auto Upload newly champion ability gif (script for downloading video and converting to gif completed)
+*	League of legend Patch notes
+*	Continues checks on the rate limiter to provide back off timer after reaching rate limit
+
+
+
 **Features already in place:**
 *	Champions ability with details as well as gif preview
 *	Summoner’s summary Profile 
