@@ -1,24 +1,34 @@
 # League-of-legend-API-Discord
- Retreive Match History Details, champion details and summoner details
+The aim for the bot is to retrieve Match History Details, champion details and summoner details and many more to come
  
- CURRENTLY WORK IN PROGRESS DONT EXPECT ANYTHING TO WORK AT THIS POINT
+**CURRENTLY WORK IN SOME FEATURES HAVE NOT BEEN ADDED OR MAY INCLUDE BUGS**
 
-Features to add:
+**Features to add:**
 
-Champions, receive their ability, skin preview etc
+Champions profile 
+*	Champion builds
+*	Champion Skins
 
-Champion Builds but would require permissionn from OP.GG or other site for those data etc
-or will proceed with creating script to gather matchistory and update an SQL databse with it
+Summoner’s Match History
+*	Their current Win percentage for their last 10 Games
+*	Summoner’s best lane/champions 
+*	Summoner’s game status full
+
+**Features already in place:**
+*	Champions ability with details as well as gif preview
+*	Summoner’s summary Profile 
+*	Total games from last 2 years
+*	Champion masteries returns their top 3
+*	Summoner’s Ranked summary
+*	In game summary (will provide full game in the above Summoner’s game status)
 
 
-Summoner Profile working, need to tweak some features and remove some bugs
+Champion Builds but would require permission from OP.GG or other site for those data etc or will proceed with creating script to gather matchistory and update an SQL databse with it
 
-![profile](https://i.imgur.com/NmTa2mt.png)
+
+![profile](https://i.imgur.com/6pjSOxF.png)
 ![profile](https://i.imgur.com/KKTXCJP.png)
 ![profile](https://i.imgur.com/16KubCb.png)
-
-Champion ability has been implemented with animated gifs
-
 ![profile](https://i.imgur.com/gc3b5Db.png)
 ![profile](https://i.imgur.com/aBsQ6C0.png)
 
