@@ -129,7 +129,6 @@ class Summoner_embed(Summoner):
             total_games = win + loss
 
             if type(promotion) == dict:
-                print(promotion)
                 p_win, p_loss, target,p_games = promotion['wins'],promotion['losses'],promotion['target'],len(promotion['progress'])
                 league_point = f"|:white_small_square:**Promotion Series**\n" \
                                f"|:small_blue_diamond: **Win: **{p_win}\n|:small_blue_diamond: **Loss:** {p_loss}\n|:small_blue_diamond: **Target:** {target}\n|:small_blue_diamond: **Games:** {p_games}"

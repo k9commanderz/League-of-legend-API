@@ -66,7 +66,7 @@ class Champion_ability(Champion):
         if self.chosen_ability == 'passive':
             return False
         split_cool_down = ability.split('/')
-        cool_down_stats = [f'Rank {stage}: {seconds}' if len(split_cool_down) > 1 else f'All Stages: {seconds}' for
+        cool_down_stats = [f'Rank {stage}: {seconds}' if len(split_cool_down) > 1 else f'All rank: {seconds}' for
                            stage, seconds in enumerate(split_cool_down, 1)]
         return '\n'.join(cool_down_stats)
 
@@ -82,7 +82,11 @@ class Champion_ability(Champion):
 
         ability__range = '\n'.join(ability__range)
 
-        if int(ability__range) == 1:
-            ability__range = 'No Range'
+        try:
+            if int(ability__range) == 1:
+                ability__range = 'No Range'
+        except ValueError:
+            pass
+
 
         return ability__range

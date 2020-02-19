@@ -49,7 +49,6 @@ class Riot_api:
 
         )
         self.total_request += 1
-        print(self.total_request)
         return requests.get(self.__url).json()
 
     def api_key_status(self, api):
