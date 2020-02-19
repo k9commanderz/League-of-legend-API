@@ -33,10 +33,9 @@ API Wrapper
 
 Champion Builds but would require permission from OP.GG or other site for those data etc or will proceed with creating script to gather matchistory and update an SQL databse with it
 
-
-![profile](https://i.imgur.com/6pjSOxF.png)
-![profile](https://i.imgur.com/KKTXCJP.png)
 ![profile](https://i.imgur.com/16KubCb.png)
+![profile](https://i.imgur.com/6pjSOxF.png)
+![profile](https://i.imgur.com/Wh55An0.png)
 ![profile](https://i.imgur.com/gc3b5Db.png)
 ![profile](https://i.imgur.com/aBsQ6C0.png)
 
