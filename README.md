@@ -40,3 +40,10 @@ Champion Builds but would require permission from OP.GG or other site for those 
 ![profile](https://i.imgur.com/gc3b5Db.png)
 ![profile](https://i.imgur.com/aBsQ6C0.png)
 
+![profile](https://i.imgur.com/lNOXOcl.png)
+![profile](https://i.imgur.com/trQJFhQ.png)
+
+**Champion Build is in progress**
+GIF demonstration https://i.imgur.com/D0ftGfT.gifv
+![profile](https://i.imgur.com/h6YENEx.png)
+
