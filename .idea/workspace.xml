@@ -2,184 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="Fixed Spectate info not displaying">
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/catalog.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/champion_price.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/aatrox.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ahri.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/akali.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/alistar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/amumu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/anivia.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/annie.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/aphelios.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ashe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/aurelionsol.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/azir.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/bard.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/blitzcrank.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/brand.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/braum.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/caitlyn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/camille.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/cassiopeia.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/chogath.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/corki.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/darius.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/diana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/draven.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/drmundo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ekko.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/elise.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/evelynn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ezreal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/fiddlesticks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/fiora.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/fizz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/galio.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/gangplank.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/garen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/gnar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/gragas.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/graves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/hecarim.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/heimerdinger.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/illaoi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/irelia.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ivern.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/janna.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/jarvaniv.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/jax.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/jayce.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/jhin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/jinx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kaisa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kalista.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/karma.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/karthus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kassadin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/katarina.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kayle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kayn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kennen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/khazix.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kindred.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/kogmaw.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/leblanc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/leesin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/leona.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/lissandra.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/lucian.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/lulu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/lux.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/malphite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/malzahar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/maokai.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/masteryi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/missfortune.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/monkeyking.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/mordekaiser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/morgana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/nami.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/nasus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/nautilus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/neeko.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/nidalee.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/nocturne.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/nunu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/olaf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/orianna.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ornn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/pantheon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/poppy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/pyke.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/qiyana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/quinn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/rakan.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/rammus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/reksai.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/renekton.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/rengar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/riven.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/rumble.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ryze.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/sejuani.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/senna.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/sett.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/shaco.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/shen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/shyvana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/singed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/sion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/sivir.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/skarner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/sona.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/soraka.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/swain.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/sylas.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/syndra.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/tahmkench.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/taliyah.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/talon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/taric.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/teemo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/thresh.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/tristana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/trundle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/tryndamere.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/twistedfate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/twitch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/udyr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/urgot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/varus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/vayne.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/veigar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/velkoz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/vi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/viktor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/vladimir.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/volibear.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/warwick.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/xayah.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/xerath.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/xinzhao.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/yasuo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/yorick.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/yuumi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/zac.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/zed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/ziggs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/zilean.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/zoe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Json_files/championlore/zyra.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/champion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/League/reaction_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/embeds/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/embeds/ability_embed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/embeds/champion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/embeds/champion_builds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/embeds/champion_lore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/embeds/summoners.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Abdul.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Abdul.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Discord_data/Ability_Embed.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Discord_data/ChampionEmbed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Discord_data/SummonersEmbed.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Discord_data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Json_files/Json_downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Json_files/Json_downloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Json_files/champion.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Json_files/champion.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Json_files/championFull.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Json_files/item.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Json_files/item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Json_files/summoner.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Json_files/summoner.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Json_files/version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Json_files/version.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/Champion_Ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Champion_Ability.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/Champions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/MatchHistory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/MatchHistory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/Summoner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Summoner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/Summoner_spell.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/Summoner_spell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/spectator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/spectator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/League of legend Discord bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,7 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582082253555</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Cleaned up champion class and a lot of stuff, renamed some modules to their correct convention">
+      <created>1582409875895</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1582409875895</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Cleaned up codes from champion class, improved json downloader, renamed modules to their correct convention">
+      <created>1582410010395</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582410010395</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -509,7 +348,8 @@
     <MESSAGE value="forgot to include ability_embed" />
     <MESSAGE value="Mastery points should now include coma separation." />
     <MESSAGE value="Cleaned up champion class and a lot of stuff, renamed some modules to their correct convention" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up champion class and a lot of stuff, renamed some modules to their correct convention" />
+    <MESSAGE value="Cleaned up codes from champion class, improved json downloader, renamed modules to their correct convention" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up codes from champion class, improved json downloader, renamed modules to their correct convention" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581024630355">
@@ -524,37 +364,37 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1582409874043">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1582410224766">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582409874043" />
-    <state x="369" y="183" key="DiffContextDialog" timestamp="1581463919429">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410224766" />
+    <state x="369" y="183" key="DiffContextDialog" timestamp="1582410041394">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="369" y="183" key="DiffContextDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1581463919429" />
+    <state x="369" y="183" key="DiffContextDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410041394" />
     <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1581604071557">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1581604071557" />
-    <state width="2538" height="358" key="GridCell.Tab.0.bottom" timestamp="1582408953254">
+    <state width="2538" height="358" key="GridCell.Tab.0.bottom" timestamp="1582410071040">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2538" height="358" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582408953254" />
+    <state width="2538" height="358" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410071040" />
     <state width="1419" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
-    <state width="2538" height="358" key="GridCell.Tab.0.center" timestamp="1582408953254">
+    <state width="2538" height="358" key="GridCell.Tab.0.center" timestamp="1582410071040">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2538" height="358" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582408953254" />
+    <state width="2538" height="358" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410071040" />
     <state width="1419" height="208" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
-    <state width="2538" height="358" key="GridCell.Tab.0.left" timestamp="1582408953254">
+    <state width="2538" height="358" key="GridCell.Tab.0.left" timestamp="1582410071040">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2538" height="358" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582408953254" />
+    <state width="2538" height="358" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410071040" />
     <state width="1419" height="208" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
-    <state width="2538" height="358" key="GridCell.Tab.0.right" timestamp="1582408953254">
+    <state width="2538" height="358" key="GridCell.Tab.0.right" timestamp="1582410071040">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2538" height="358" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582408953254" />
+    <state width="2538" height="358" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410071040" />
     <state width="1419" height="208" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -564,10 +404,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1581620464956" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1582409904606">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1582410068674">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582409904606" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410068674" />
+    <state x="1089" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582410227928">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1089" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410227928" />
     <state x="385" y="452" width="1456" height="891" key="dock-window-1" timestamp="1582204299064">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
