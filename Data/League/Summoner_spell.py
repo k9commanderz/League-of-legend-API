@@ -9,6 +9,7 @@ class SummonerSpell:
     def summoner_spell_name(self):
         """
         Retrieve the name of a summoner spell from given id
+
         """
         data = json.load(open("Data/Json_files/summoner.json", encoding="utf8"))
         for i in data['data'].values():
