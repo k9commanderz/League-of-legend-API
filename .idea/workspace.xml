@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="Fixed Spectate info not displaying">
-      <change beforePath="$PROJECT_DIR$/Data/Discord_data/Ability_Embed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Discord_data/ChampionEmbed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Discord_data/__init__.py" beforeDir="false" />
+    <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +32,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Youtube Downloader Pyqt5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Data/League/summoner_spell.py" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Data/League/summoner_spell.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -50,7 +49,7 @@
       <recent name="C:\Users\Abdul\PycharmProjects\League of legend API\Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.League of legend Discord bot">
+  <component name="RunManager" selected="Python.summoner_spell">
     <configuration name="League of legend Discord bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,27 +84,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/embeds/ability_embed.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="champion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="League of legend API" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/League" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/League/champion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,13 +134,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="summoner_spell" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="League of legend API" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/League" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/League/summoner_spell.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.summoner_spell" />
         <item itemvalue="Python.League of legend Discord bot" />
         <item itemvalue="Python.champion_lore" />
         <item itemvalue="Python.champion_builds" />
         <item itemvalue="Python.ability_embed" />
-        <item itemvalue="Python.champion" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582410010395</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fixed Spectate info not displaying">
+      <created>1582410248083</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1582410248083</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -342,14 +348,14 @@
     <MESSAGE value="Moved Folders, added new features" />
     <MESSAGE value="cleaned up summoner command moved it to another class for easier debugging" />
     <MESSAGE value="forgot to upload remaining files" />
-    <MESSAGE value="Fixed Spectate info not displaying" />
     <MESSAGE value="including version control to download latest league data" />
     <MESSAGE value="added champion ability command" />
     <MESSAGE value="forgot to include ability_embed" />
     <MESSAGE value="Mastery points should now include coma separation." />
     <MESSAGE value="Cleaned up champion class and a lot of stuff, renamed some modules to their correct convention" />
     <MESSAGE value="Cleaned up codes from champion class, improved json downloader, renamed modules to their correct convention" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up codes from champion class, improved json downloader, renamed modules to their correct convention" />
+    <MESSAGE value="Fixed Spectate info not displaying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Spectate info not displaying" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581024630355">
@@ -364,18 +370,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1582410224766">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1582410480910">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410224766" />
-    <state x="369" y="183" key="DiffContextDialog" timestamp="1582410041394">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410480910" />
+    <state x="369" y="183" width="2048" height="1146" key="DiffContextDialog" timestamp="1582410432766">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="369" y="183" key="DiffContextDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410041394" />
-    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1581604071557">
+    <state x="369" y="183" width="2048" height="1146" key="DiffContextDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410432766" />
+    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1582410395261">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1581604071557" />
+    <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410395261" />
     <state width="2538" height="358" key="GridCell.Tab.0.bottom" timestamp="1582410071040">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -404,10 +410,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1581620464956" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1582410068674">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1582410430290">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410068674" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410430290" />
     <state x="1089" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582410227928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
