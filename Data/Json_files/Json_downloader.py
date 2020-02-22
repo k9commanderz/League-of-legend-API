@@ -1,9 +1,13 @@
 import requests
+import re
 import json
+import datetime
 
 
 def request(url):
     return requests.get(url).json()
+
+
 
 
 class Data_dragon:
@@ -25,6 +29,7 @@ class Data_dragon:
             self.champion_data_set()
             self.summoner_data_set()
             self.items_data_set()
+            self.champion_price()
 
             self.update_version_file()
             print(f"Download complete\nNew version {self.league_version}")
@@ -34,9 +39,15 @@ class Data_dragon:
     def champion_data_set(self):
         champion = f"{self.data_url + self.league_version}/data/en_GB/champion.json"
         champion_full = f"{self.data_url + self.league_version}/data/en_GB/championFull.json"
-        with open("champion.json", "w") as s, open("championFull.json", "w") as f:
-            json.dump(request(champion), s)
-            json.dump(request(champion_full), f)
+        with open("champion.json", "w") as f:
+            print("Downloading champion data and extracting info")
+            champion = request(champion)
+            champion_full = request(champion_full)
+
+            champ_full = {key.title(): value for key, value in champion_full['data'].items()}
+            champ_full.update({champ[1]['key']: champ[1] for champ in champion['data'].items()})
+
+            json.dump(champ_full, f)
 
     def summoner_data_set(self):
         summoner = f"{self.data_url + self.league_version}/data/en_GB/summoner.json"
@@ -51,6 +62,22 @@ class Data_dragon:
     def update_version_file(self):
         with open("version.txt", "w") as f:
             f.write(self.league_version)
+
+    @staticmethod
+    def champion_price():
+
+        champion_lore = {}
+        store = requests.get("https://store.eun1.lol.riotgames.com/storefront/v1/catalog?region=EUN1&language=en_US").json()
+
+        for data in store:
+            if data['inventoryType'] == 'CHAMPION':
+                release_date = re.search('\d+-\d\d-\d\d', data['releaseDate']).group(0)
+                release_date = datetime.datetime.strptime(release_date, '%Y-%m-%d').strftime('%d-%m-%Y')
+                currency = data['prices'][0]['cost'], data['prices'][1]['cost']
+                champion_lore[data['itemId']] = (currency, release_date)
+
+        with open("champion_price.json", "w")as f:
+            json.dump(champion_lore, f)
 
 
 if __name__ == "__main__":

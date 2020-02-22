@@ -1,7 +1,7 @@
 from Data.RiotAPI import Riot_api as RP
 from Data.RiotAPI import services
 from Data.RiotAPI import servers
-from Data.League import Champions
+from Data.League import champion
 from Data.League.MatchHistory import Match_History
 from Data.League.spectator import Spectator
 import time
@@ -60,12 +60,12 @@ class Summoner(RP, Match_History, Spectator):
 
             total_champion = len(summoner_mastery)  # total champions the user has played or at least got a point
 
-            mastery_champions = [(Champions.get_champion_name(champions['championId']), champions['championLevel'],
-                                  champions['championPoints'],
-                                  champions['lastPlayTime']) for champions in summoner_mastery[0:3]
-                                 # only need top 3 champions no more
-                                 if champions[
-                                     'championLevel'] >= 0]  # returns all champions that have mastery level of 5 and above anything below is not needed
+            mastery_champions = {}
+
+            for _champion in summoner_mastery[0:3]:
+                if _champion['championLevel'] >= 0:
+                    mastery_champions[champion.champion_data[str(_champion['championId'])]['name']] = \
+                        (_champion['championLevel'], _champion['championPoints'], _champion['lastPlayTime'])
 
             """
             need to work on getting the champions

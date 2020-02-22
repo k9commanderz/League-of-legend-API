@@ -1,22 +1,25 @@
 import discord
 from discord.ext import commands
 # from discord.ext.commands import CommandError
-from Data.Discord_data.Ability_Embed import Ability_embed
-from Data.Discord_data.SummonersEmbed import Summoner_embed, servers
-import time
+from Data.League.reaction_page import Reactions
+from Data.embeds.ability_embed import AbilityEmbed
+from Data.embeds.champion import ChampionEmbed
+from Data.embeds.summoners import SummonerEmbed, servers
 
 bot = commands.Bot(command_prefix='$')
 
 
 class League_bot(commands.Cog):
+    emojis = ['\N{wastebasket}','\N{crossed swords}','\N{open book}']
 
     def __init__(self, bot):
         self.bot = bot
-        self.server = None
 
     @commands.Cog.listener()
     async def on_ready(self):
         print(f'We have logged in as {self.bot.user}\n')
+
+
 
     # @commands.Cog.listener()
     # async def on_command_error(self, ctx, error):
@@ -30,14 +33,6 @@ class League_bot(commands.Cog):
     @commands.command()
     async def summoner(self, ctx, server, *args):
 
-        start = time.time()
-        """
-        $summoner <Server> <Username>
-
-        retrieve summoner profile their level, top 3 masteries and quick
-        summary if they are in game o rnot and their rank
-
-        """
         user = " ".join(args)
 
         if server.upper() not in servers:
@@ -47,7 +42,7 @@ class League_bot(commands.Cog):
         elif not user:
             return await ctx.channel.send("Please input summoner name")
 
-        summoner_embed = Summoner_embed(server, user)
+        summoner_embed = SummonerEmbed(server, user)
 
         if not summoner_embed.account_status:
             return await ctx.channel.send("Summoner not found")
@@ -59,10 +54,24 @@ class League_bot(commands.Cog):
     @commands.command()
     async def ability(self, ctx, champion, ability):
 
-        embed = discord.Embed.from_dict(Ability_embed(champion, ability).embed)
+        ability = AbilityEmbed(champion, ability)
 
+        embed = discord.Embed.from_dict(ability.embed)
         await ctx.channel.send(embed=embed)
+
+    @commands.command()
+    async def champion(self, ctx, champion):
+
+        champions = ChampionEmbed(champion)
+
+        embed = discord.Embed.from_dict(champions.embed)
+
+        champion_message = await ctx.channel.send(embed=embed)
+
+        [await champion_message.add_reaction(emoji) for emoji in self.emojis]
+
 
 if __name__ == "__main__":
     bot.add_cog(League_bot(bot))
+    bot.add_cog(Reactions(bot))
     bot.run("")

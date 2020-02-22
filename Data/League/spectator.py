@@ -1,7 +1,7 @@
 import datetime
-from Data.League import Champions
-from Data.League.Map import Map
-from Data.League.Summoner_spell import Summoner_spell
+from Data.League import champion
+from Data.League.map import Map
+from Data.League.summoner_spell import SummonerSpell
 
 
 class Spectator:
@@ -10,27 +10,38 @@ class Spectator:
         self.summoner_id = summoner_id
         self.server = server
         self.services = service
-        self.active = self.__get_ActiveSummoner_profile()
+        self.active = self.__game_status()
 
-    def __get_ActiveSummoner_profile(self):
-        game = self._request(self.services, self.summoner_id, self.server)
-        if 'status' in game:
+    def __game_status(self):
+        self.game = self._request(self.services, self.summoner_id, self.server)
+
+        if 'status' in self.game:
             return "No Active Game"
         else:
-            if 'gameQueueConfigId' in game:
-                game_id, map_id, _, game_type, game_mode, participants, observers, platformID, banned_champion, gameStartTime, game_length = game.values()
+            if 'gameQueueConfigId' in self.game:
+                game_id, self.map_id, _, self.game_type, self.game_mode, self.participants, observers, platformID,\
+                banned_champion, gameStartTime, self.game_length = self.game.values()  # for custom games
             else:
-                game_id, map_id, _, game_type, participants, observers, platformID, banned_champion, gameStartTime, game_length = game.values()
+                game_id, self.map_id, _, self.game_type, self.participants, observers, platformID, \
+                banned_champion, gameStartTime, self.game_length = self.game.values()  # for actual game
 
-        for participant in participants:
+            return self.summoner()
+
+    def summoner(self):
+
+        for participant in self.participants:
+
             if participant['summonerId'] == self.summoner_id:
-                TeamID, f_summonerSpell, s_summonerSpell, champion_id, _, original_summoner, *_ = participant.values()
+                TeamID, first_summoner_spell_id, second_summoner_spell_id, champion_id, _, original_summoner, *_ = participant.values()
+
                 team = 'Blue' if TeamID == 100 else 'Red'
-                champion_name = Champions.get_champion_name(champion_id)
-                summoner_spell = Summoner_spell(f_summonerSpell).sum_name, Summoner_spell(s_summonerSpell).sum_name
-                game_length = str(datetime.timedelta(seconds=game_length))
-                game_mode, map_name = (
-                    Map(game_mode).get_game_mode()) if 'gameQueueConfigId' in game else (
-                    game_type, Map(map_id).get_map_name())
+                champion_name = champion.champion_data[str(champion_id)]['name']
+
+                summoner_spell = str(SummonerSpell(first_summoner_spell_id)), str(SummonerSpell(second_summoner_spell_id))
+
+
+                game_length = str(datetime.timedelta(seconds=self.game_length))
+                game_mode, map_name = (Map(self.game_mode).get_game_mode()) \
+                    if 'gameQueueConfigId' in self.game else (self.game_type, Map(self.map_id).get_map_name())
 
                 return team, map_name, game_mode, summoner_spell, champion_name, game_length

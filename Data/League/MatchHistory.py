@@ -1,5 +1,5 @@
 from concurrent.futures import ThreadPoolExecutor
-from Data.League.Map import Map
+from Data.League.map import Map
 
 modes = ["5v5 Draft Pick games",
          "5v5 Ranked Solo games",
