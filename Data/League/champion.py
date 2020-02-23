@@ -1,14 +1,10 @@
 import json
-import requests
-from Data.Tools.Description_parser import removed_html
-import os
 import re
 
 """
 Work in progress
 coding will be cleaned 
 """
-print("im loaded")
 
 version = open(r'Data\Json_files\version.txt').read()
 champion_data = json.load(open(r"Data\Json_files\champion.json"))

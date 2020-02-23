@@ -13,7 +13,7 @@ class Reactions(commands.Cog):
         self.bot = bot
         self.book_navigation = ['\N{black left-pointing triangle}',
                                 '\N{black right-pointing triangle}',
-                                '\N{shield}']
+                                ]
 
     @commands.Cog.listener()
     async def on_reaction_add(self, reaction, user):
@@ -44,6 +44,7 @@ class Reactions(commands.Cog):
                 # check the number of pages the lore book has if it's greater than 1 then add navigator
                 if len(lore.pages_content) > 1:
                     [await reaction.message.add_reaction(emoji) for emoji in self.book_navigation]
+                    await reaction.message.add_reaction('\N{shield}')
                 else:
                     await reaction.message.add_reaction('\N{shield}')
 
