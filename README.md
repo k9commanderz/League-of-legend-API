@@ -38,8 +38,6 @@ Champion Builds but would require permission from OP.GG or other site for those 
 
 ![](https://i.imgur.com/S5MOVpg.gif)
 
-![profile](https://i.imgur.com/lNOXOcl.png)
-
 **Champion Build is in progress**
-![](https://i.imgur.com/D0ftGfT.gif)
+![](https://i.imgur.com/MaRRM20.gif)
 
