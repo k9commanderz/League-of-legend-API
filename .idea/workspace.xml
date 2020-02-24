@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0d38c93b-2386-480d-bd72-370e3690ed4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/League/champion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/champion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/League/reaction_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/League/reaction_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/RiotAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RiotAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/embeds/champion_lore.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/embeds/champion_lore.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/League of legend Discord bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/League of legend Discord bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.League of legend Discord bot">
+    <configuration name="Hotukdealv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="League of legend API" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Hotukdealv2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="League of legend Discord bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,48 +96,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ability_embed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="League of legend API" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/embeds" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/embeds/ability_embed.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="champion_builds" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="League of legend API" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/embeds" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/embeds/champion_builds.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="champion_lore" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="League of legend API" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,6 +109,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/embeds/champion_lore.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reaction_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="League of legend API" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data/League" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data/League/reaction_page.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,10 +162,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.League of legend Discord bot" />
+        <item itemvalue="Python.reaction_page" />
+        <item itemvalue="Python.Hotukdealv2" />
         <item itemvalue="Python.summoner_spell" />
         <item itemvalue="Python.champion_lore" />
-        <item itemvalue="Python.champion_builds" />
-        <item itemvalue="Python.ability_embed" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582410547259</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="removed the unnecessary imports&#10;reaction page , champion build page should no longer remove profile emoji and readd">
+      <created>1582487085669</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1582487085669</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -375,7 +382,8 @@
     <MESSAGE value="Fixed Spectate info not displaying" />
     <MESSAGE value="removed test .py" />
     <MESSAGE value="lower cased" />
-    <option name="LAST_COMMIT_MESSAGE" value="lower cased" />
+    <MESSAGE value="removed the unnecessary imports&#10;reaction page , champion build page should no longer remove profile emoji and readd" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the unnecessary imports&#10;reaction page , champion build page should no longer remove profile emoji and readd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581024630355">
@@ -390,10 +398,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1123" y="591" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1579987599331" />
-    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1582410546625">
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2" timestamp="1582487084928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410546625" />
+    <state x="763" y="350" width="1276" height="809" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582487084928" />
     <state x="369" y="183" width="2048" height="1146" key="DiffContextDialog" timestamp="1582410432766">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -402,25 +410,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410395261" />
-    <state width="2522" height="163" key="GridCell.Tab.0.bottom" timestamp="1582482154655">
+    <state width="2522" height="376" key="GridCell.Tab.0.bottom" timestamp="1582582801213">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2522" height="163" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582482154655" />
+    <state width="2522" height="376" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582582801213" />
     <state width="1419" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
-    <state width="2522" height="163" key="GridCell.Tab.0.center" timestamp="1582482154655">
+    <state width="2522" height="376" key="GridCell.Tab.0.center" timestamp="1582582801213">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2522" height="163" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582482154655" />
+    <state width="2522" height="376" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582582801213" />
     <state width="1419" height="208" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
-    <state width="2522" height="163" key="GridCell.Tab.0.left" timestamp="1582482154654">
+    <state width="2522" height="376" key="GridCell.Tab.0.left" timestamp="1582582801213">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2522" height="163" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582482154654" />
+    <state width="2522" height="376" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582582801213" />
     <state width="1419" height="208" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
-    <state width="2522" height="163" key="GridCell.Tab.0.right" timestamp="1582482154655">
+    <state width="2522" height="376" key="GridCell.Tab.0.right" timestamp="1582582801213">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2522" height="163" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582482154655" />
+    <state width="2522" height="376" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582582801213" />
     <state width="1419" height="208" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1440.860@2560.0.1440.860" timestamp="1582235147194" />
     <state x="1230" y="495" key="MultipleFileMergeDialog" timestamp="1580005172517">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -430,10 +438,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="462" key="SettingsEditor/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1581620464956" />
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1582410555554">
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2" timestamp="1582487093440">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582410555554" />
+    <state x="872" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1440.860@0.0.2560.1400" timestamp="1582487093440" />
     <state x="1089" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582410227928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

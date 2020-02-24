@@ -15,9 +15,17 @@ class Reactions(commands.Cog):
                                 '\N{black right-pointing triangle}',
                                 ]
 
+        self.reaction = None
+
+    def book(self, champion_id):
+        pass
+
+
     @commands.Cog.listener()
     async def on_reaction_add(self, reaction, user):
         users = await reaction.users().flatten()
+
+        self.reaction = reaction
 
         def exact_id_from_colour(colour):
             # page number champion id
@@ -29,13 +37,47 @@ class Reactions(commands.Cog):
             # champion id stored in the red
             page_number, champion_id = exact_id_from_colour(reaction.message.embeds[0].colour)
 
+            lore = LoreEmbed(champion_id)
+
+
+
+            # ▶
+            # ◀
+
+            if reaction.emoji == "▶" and page_number < lore.total_pages:
+
+
+                lore.page_number = page_number + 1
+
+                embed = discord.Embed.from_dict(lore.embed)
+
+                message = await reaction.message.edit(embed=embed)
+
+                await reaction.remove(user)
+            else:
+                await reaction.remove(user)
+
+            if reaction.emoji == "◀" and page_number != 1:
+
+                lore.page_number = page_number - 1
+
+                embed = discord.Embed.from_dict(lore.embed)
+
+                message = await reaction.message.edit(embed=embed)
+
+                await reaction.remove(user)
+            else:
+                await reaction.remove(user)
+
+
+
             if reaction.emoji == "📖":
 
 
 
                 await reaction.remove(user)
 
-                lore = LoreEmbed(champion_id)
+
 
                 embed = discord.Embed.from_dict(lore.embed)
 
@@ -86,3 +128,5 @@ class Reactions(commands.Cog):
             elif reaction.emoji == "🗑":
                 await reaction.remove(user)
                 await reaction.message.delete()
+
+
