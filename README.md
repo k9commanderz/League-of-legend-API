@@ -3,6 +3,9 @@ The aim for the bot is to retrieve Match History Details, champion details and s
  
 **CURRENTLY WORK IN SOME FEATURES HAVE NOT BEEN ADDED OR MAY INCLUDE BUGS**
 
+**IN PROCESS OF MOVING CLASSES AROUND TO MATCH THE IS-A AND HAS-A**
+
+
 **Features to add:**
 
 Champions profile 
