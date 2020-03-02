@@ -5,6 +5,15 @@ The aim for the bot is to retrieve Match History Details, champion details and s
 
 **IN PROCESS OF MOVING CLASSES AROUND TO MATCH THE IS-A AND HAS-A**
 
+Update on refactoring
+* Spectator class has been removed from summoner class
+* match history currently been removed from summoner class
+* variables have been renamed to make it readable and have a meaning
+* methods have been renamed same as above 
+
+
+
+
 
 **Features to add:**
 
