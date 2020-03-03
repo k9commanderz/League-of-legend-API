@@ -10,6 +10,10 @@ Update on refactoring
 * match history currently been removed from summoner class
 * variables have been renamed to make it readable and have a meaning
 * methods have been renamed same as above 
+* match history should now be easier to read, and using threading for faster gathering total games
+* map module has been renamed to leaguemap, Map class from leaguemap has been removed using 2 functions
+* mapinfo json has been replaced where's the  mapid is the key 
+* queue ID has been reformed where the queue id is the key
 
 
 
