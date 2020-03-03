@@ -14,7 +14,7 @@ Update on refactoring
 * map module has been renamed to leaguemap, Map class from leaguemap has been removed using 2 functions
 * mapinfo json has been replaced where's the  mapid is the key 
 * queue ID has been reformed where the queue id is the key
-** the reason the refactoring is not reflecting the commit is due to codes being removed left and right rendering it not working for now**
+**the reason the refactoring is not reflecting the commit is due to codes being removed left and right rendering it not working for now**
 
 
 
