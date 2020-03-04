@@ -16,7 +16,7 @@ Update on refactoring
 * queue ID has been reformed where the queue id is the key
 * Spectator class has been recoded should be less of a hassle and cleaner to read
 * json downloader has been updated to support for summoner spell as well as reform them so the key for summoner spell is the key to the json
-
+* summoner spell class may be deleted as there is only 1 function in there
 
 **the reason the refactoring is not reflecting the commit is due to codes being removed left and right rendering it not working for now**
 
