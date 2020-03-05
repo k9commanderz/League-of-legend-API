@@ -3,25 +3,7 @@ The aim for the bot is to retrieve Match History Details, champion details and s
  
 **CURRENTLY WORK IN SOME FEATURES HAVE NOT BEEN ADDED OR MAY INCLUDE BUGS**
 
-**IN PROCESS OF MOVING CLASSES AROUND TO MATCH THE IS-A AND HAS-A**
-
-Update on refactoring
-* Spectator class has been removed from summoner class
-* match history currently been removed from summoner class
-* variables have been renamed to make it readable and have a meaning
-* methods have been renamed same as above 
-* match history should now be easier to read, and using threading for faster gathering total games
-* map module has been renamed to leaguemap, Map class from leaguemap has been removed using 2 functions
-* mapinfo json has been replaced where's the  mapid is the key 
-* queue ID has been reformed where the queue id is the key
-* Spectator class has been recoded should be less of a hassle and cleaner to read
-* json downloader has been updated to support for summoner spell as well as reform them so the key for summoner spell is the key to the json
-* summoner spell class may be deleted as there is only 1 function in there
-
-**the reason the refactoring is not reflecting the commit is due to codes being removed left and right rendering it not working for now**
-
-
-
+**factoring complete for now, will proceed to add more features**
 
 
 **Features to add:**
