@@ -3,7 +3,7 @@ from Data.Tools.Description_parser import Parser
 from Data.Tools.Description_parser import removed_html
 
 
-class Champion_ability(Champion):
+class ChampionAbility(Champion):
     ability_coding = {"q": 0,
                       "w": 1,
                       "e": 2,
@@ -16,13 +16,8 @@ class Champion_ability(Champion):
     def __init__(self, champion_name, skill):
         super().__init__(champion_name)
         self.skill = skill.lower()
-        if not self.ability_status:
-            self.chosen_ability = self.ability_coding[self.skill]
-            self.__champion_ability()
-
-    @property
-    def ability_status(self):
-        return self.skill not in self.ability_coding
+        self.chosen_ability = self.ability_coding[self.skill]
+        self.__champion_ability()
 
     def __champion_ability(self):
         if self.chosen_ability != 'passive':

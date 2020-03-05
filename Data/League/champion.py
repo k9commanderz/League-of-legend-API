@@ -6,9 +6,9 @@ Work in progress
 coding will be cleaned 
 """
 
-version = open(r'Data\Json_files\version.txt').read()
-champion_data = json.load(open(r"Data\Json_files\champion.json"))
-champion_price = json.load(open(r"Data\Json_files\champion_price.json"))
+version = open(r'C:\Users\Abdul\PycharmProjects\League of legend API\Data\Json_files\version.txt').read()
+championData = json.load(open(r"C:\Users\Abdul\PycharmProjects\League of legend API\Data\Json_files\champion.json"))
+champion_price = json.load(open(r"C:\Users\Abdul\PycharmProjects\League of legend API\Data\Json_files\champion_price.json"))
 
 
 class Champion:
@@ -21,7 +21,7 @@ class Champion:
 
     @property
     def _champion(self):
-        return champion_data[self.champion_name]
+        return championData[self.champion_name]
 
     @property
     def champion_name_id(self):
@@ -119,7 +119,7 @@ class ChampionBuild(Champion):
 
     @property
     def champion_name_id(self):
-        return champion_data[str(self.champion_id)]['id']
+        return championData[str(self.champion_id)]['id']
 
 
     @property

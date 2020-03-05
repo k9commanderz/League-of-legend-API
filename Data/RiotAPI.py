@@ -7,7 +7,7 @@ services = {"summoner": "/lol/summoner/v4/summoners/by-name/",
             "summoner_status": "/lol/league/v4/entries/by-summoner/",
             "spectator": "/lol/spectator/v4/active-games/by-summoner/",
             "match": "/lol/match/v4/matchlists/by-account/",
-            "profile": "http://ddragon.leagueoflegends.com/cdn/10.2.1/img/profileicon/",
+
             }
 
 servers = {"BR": "br1.api.riotgames.com",
@@ -24,22 +24,28 @@ servers = {"BR": "br1.api.riotgames.com",
            }
 test_url = f"https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/k9commanderz?api_key="
 
+currentVersion = open(r"C:\Users\Abdul\PycharmProjects\League of legend API\Data\Json_files\version.txt").read()
+
+profileUrl = f"http://ddragon.leagueoflegends.com/cdn/{currentVersion}/img/profileicon/"
+
+
 
 class Riot_api:
 
-    def __init__(self):
+    def __init__(self, server=servers['EUW']):
         self.__api_key = ""
         self.__url = None
-        self.test_url = test_url + self.__api_key
-        self.api_key_status(self.test_url)
+       #self.test_url = test_url + self.__api_key
+        #self.api_key_status(self.test_url)
+        self.server = server
         self.total_request = 0
 
     @sleep_and_retry
     @limits(calls=100, period=120)
     @sleep_and_retry
     @limits(calls=20, period=1)
-    def _request(self, service, user_id, server=servers['EUW'], *args):
-        self.server = server
+    def request(self, service, user_id, *args):
+
         self.__url = "https://{league_server}{api_service}{league_user}/?{args}&api_key={Api_key}".format(
             league_server=self.server,
             api_service=service,
@@ -62,6 +68,6 @@ class Riot_api:
     def __str__(self):
         return "Makes request based on the difference services provided by riot games"
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     Riot_api()

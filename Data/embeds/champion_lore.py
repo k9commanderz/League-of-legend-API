@@ -10,9 +10,11 @@ class LoreEmbed(ChampionLore):
 
         self.pages_content = {1: '\n\n'.join(self.biography[0:4]),
                               }
-        self.total_pages()
+        self.pages()
 
-    def total_pages(self):
+        self.total_pages = len(self.pages_content)
+
+    def pages(self):
         if '\n\n'.join(self.biography[4:8]):
             self.pages_content.update({2: '\n\n'.join(self.biography[4:8])})
             if '\n\n'.join(self.biography[8:]):

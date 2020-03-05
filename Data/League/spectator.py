@@ -1,47 +1,71 @@
 import datetime
 from Data.League import champion
-from Data.League.map import Map
-from Data.League.summoner_spell import SummonerSpell
+from Data.League import leaguemap
+from Data.RiotAPI import services
+from Data.RiotAPI import Riot_api
+from Data.RiotAPI import servers
+from Data.RiotAPI import profileUrl
+from Data.League import summoner_spell
 
-
+# noinspection PyTypeChecker
 class Spectator:
 
-    def __init__(self, summoner_id, server, service):
+    def __init__(self, summoner_id, server=servers['EUW']):
         self.summoner_id = summoner_id
         self.server = server
-        self.services = service
-        self.active = self.__game_status()
+        self.services = services['spectator']
+        self.riotAPI = Riot_api(self.server)
+        self.spectateGame = self.__spectateStatus()
 
-    def __game_status(self):
-        self.game = self._request(self.services, self.summoner_id, self.server)
+    def __spectateStatus(self):
+        spectateInfo = self.riotAPI.request(self.services, self.summoner_id, self.server)
+        return "No Active Game" if 'status' in spectateInfo else spectateInfo
 
-        if 'status' in self.game:
-            return "No Active Game"
-        else:
-            if 'gameQueueConfigId' in self.game:
-                game_id, self.map_id, _, self.game_type, self.game_mode, self.participants, observers, platformID,\
-                banned_champion, gameStartTime, self.game_length = self.game.values()  # for custom games
-            else:
-                game_id, self.map_id, _, self.game_type, self.participants, observers, platformID, \
-                banned_champion, gameStartTime, self.game_length = self.game.values()  # for actual game
+    @property
+    def participants(self):
+        return {summoner['summonerId']: (summoner['summonerName'],
+                                         champion.championData[str(summoner['championId'])]['name'],
+                                         summoner_spell.spellIdToName(summoner['spell1Id']),
+                                         summoner_spell.spellIdToName(summoner['spell2Id']),
+                                         "Blue" if summoner['teamId'] == 100 else "Red",
+                                         f"{profileUrl}{summoner['profileIconId']}.png",
+                                         summoner['perks'])
+                for summoner in self.spectateGame['participants']}
 
-            return self.summoner()
+    @property
+    def gameId(self):
+        return self.spectateGame['gameId']
 
-    def summoner(self):
+    @property
+    def gameMode(self):
+        # will be used to check if the user is in a Custom games or actual game
+        return leaguemap.queueIdToName(self.spectateGame['gameQueueConfigId']) \
+            if 'gameQueueConfigId' in self.spectateGame else \
+            (self.spectateGame['gameType'], leaguemap.mapIdToName(self.spectateGame['mapId']))
 
-        for participant in self.participants:
+    @property
+    def observers(self):
+        return self.spectateGame['observers']
 
-            if participant['summonerId'] == self.summoner_id:
-                TeamID, first_summoner_spell_id, second_summoner_spell_id, champion_id, _, original_summoner, *_ = participant.values()
+    @property
+    def platformId(self):
+        return self.spectateGame['platformId']
 
-                team = 'Blue' if TeamID == 100 else 'Red'
-                champion_name = champion.champion_data[str(champion_id)]['name']
+    @property
+    def bannedChampions(self):
+        return self.spectateGame['bannedChampions']
 
-                summoner_spell = str(SummonerSpell(first_summoner_spell_id)), str(SummonerSpell(second_summoner_spell_id))
+    @property
+    def gameStartTime(self):
+        return self.spectateGame['gameStartTime']
+
+    @property
+    def gameLength(self):
+        return str(datetime.timedelta(seconds=self.spectateGame['gameLength']))
 
 
-                game_length = str(datetime.timedelta(seconds=self.game_length))
-                game_mode, map_name = (Map(self.game_mode).get_game_mode()) \
-                    if 'gameQueueConfigId' in self.game else (self.game_type, Map(self.map_id).get_map_name())
 
-                return team, map_name, game_mode, summoner_spell, champion_name, game_length
+
+if __name__ == "__main__":
+    spectate = Spectator("YoOtOj4EiooAege_7Xi-_kUk5Our9ZYMivgjW5YXw5RgSqo")
+    print(spectate.spectateGame)

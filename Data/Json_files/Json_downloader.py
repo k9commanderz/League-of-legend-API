@@ -8,6 +8,14 @@ def request(url):
     return requests.get(url).json()
 
 
+def cleanQueueJson():
+    queueInfo = json.load(open(r"C:\Users\Abdul\PycharmProjects\League of legend API\Data\Json_files\queues.json"))
+    # clean the queue so it sets the Queue ID as the key and the rest as their values
+    cleanDictionary = {str(queue['queueId']): (queue['map'], queue['description']) for queue in queueInfo}
+    with open(r"C:\Users\Abdul\PycharmProjects\League of legend API\Data\Json_files\queues.json", "w") as f:
+        json.dump(cleanDictionary, f)
+
+
 
 
 class Data_dragon:
@@ -30,11 +38,19 @@ class Data_dragon:
             self.summoner_data_set()
             self.items_data_set()
             self.champion_price()
+            self.summonerSpellData()
 
             self.update_version_file()
             print(f"Download complete\nNew version {self.league_version}")
         else:
             print("Up to data")
+
+    def summonerSpellData(self):
+        summonerSpellUrl = f"{self.data_url + self.league_version}/data/en_GB/summoner.json"
+        with open("summoner.json", "w") as f:
+            summonerSpellData = request(summonerSpellUrl)
+            clean = {spell['key']: spell['name'] for spell in summonerSpellData['data'].values()}
+            json.dump(clean, f)
 
     def champion_data_set(self):
         champion = f"{self.data_url + self.league_version}/data/en_GB/champion.json"

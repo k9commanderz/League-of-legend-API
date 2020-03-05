@@ -18,8 +18,9 @@ class League_bot(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(f'We have logged in as {self.bot.user}\n')
-
-
+        #
+        # with open("blood.png", "rb") as f:
+        #     await bot.user.edit(avatar=f.read())
 
     # @commands.Cog.listener()
     # async def on_command_error(self, ctx, error):
@@ -42,12 +43,12 @@ class League_bot(commands.Cog):
         elif not user:
             return await ctx.channel.send("Please input summoner name")
 
-        summoner_embed = SummonerEmbed(server, user)
+        summonerEmbed = SummonerEmbed(server, user)
 
-        if not summoner_embed.account_status:
+        if not summonerEmbed.summonerStatus:
             return await ctx.channel.send("Summoner not found")
 
-        embed = discord.Embed.from_dict(summoner_embed.get_embed())
+        embed = discord.Embed.from_dict(summonerEmbed.getEmbed())
 
         await ctx.channel.send(embed=embed)
 
@@ -74,4 +75,4 @@ class League_bot(commands.Cog):
 if __name__ == "__main__":
     bot.add_cog(League_bot(bot))
     bot.add_cog(Reactions(bot))
-    bot.run("")
+    bot.run()

@@ -3,7 +3,7 @@ import discord
 from Data.embeds.champion_lore import LoreEmbed
 from Data.embeds.champion import ChampionEmbed
 from Data.embeds.champion_builds import ChampionBuildEmbed
-from Data.League.champion import champion_data
+from Data.League.champion import championData
 
 
 class Reactions(commands.Cog):
